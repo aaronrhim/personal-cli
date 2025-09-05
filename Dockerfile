@@ -1,5 +1,5 @@
 # Usage:
-    
+
 
 # UID0, GID0:root, UID1000:node, GID1000:node
 # /usr - system-wide dirs
@@ -31,5 +31,3 @@ COPY dist/personal.tgz personal.tgz
 RUN npm install -g personal.tgz \
     && npm cache clean --force \
     && rm -rf /usr/local/share/npm-global/lib/node_modules/personal-cli/node_modules/.cache \
-    && rm -rf /usr/local/share/npm-global/lib/node_modules/personal-cli/node_modules/tests \
-    && rm -rf /usr/local/share/npm-global/lib/node_modules/personal-cli/node_modules/docs \
