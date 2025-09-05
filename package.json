@@ -1,0 +1,20 @@
+{
+  "name": "personal-cli",
+  "version": "0.0.0",
+  "description": "my own cli",
+  "license": "ISC",
+  "author": "Aaron Rhim",
+  "type": "module",
+  
+  "files":[
+    "bin",
+    "dist"
+  ],
+  "bin":{
+    "personal": "bin/personal.js"
+  },
+  "scripts": {
+    "prepack": "chmod +x bin/personal.js",
+    "postpack": "mkdir -p dist && mv *.tgz dist/personal.tgz"
+  }
+}
