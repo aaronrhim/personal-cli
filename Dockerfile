@@ -1,6 +1,3 @@
-# Usage:
-
-
 # UID0, GID0:root, UID1000:node, GID1000:node
 # /usr - system-wide dirs
 # /home - personal home dirs
